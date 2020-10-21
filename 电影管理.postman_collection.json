@@ -1,0 +1,242 @@
+{
+	"variables": [],
+	"info": {
+		"name": "电影管理",
+		"_postman_id": "b5ed653a-d6f8-8894-a9ba-2be357c40e0e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/movies",
+			"request": {
+				"url": "http://localhost:5000/movies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "movie_name",
+							"value": "英雄本色2",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "douban_id",
+							"value": "1297574",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "director",
+							"value": "吴宇森",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "lead_actors",
+							"value": "周润发 / 狄龙 / 张国荣 / 朱宝意 / 李子雄",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "movie_type",
+							"value": "剧情 / 动作 / 犯罪",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "电影管理"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/users",
+			"request": {
+				"url": "http://localhost:5000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user_name",
+							"value": "shadow",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123123",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "email",
+							"value": "a@qq.com",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "name",
+							"value": "yanze",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "用户管理"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/moviesInfo/1/1",
+			"request": {
+				"url": "http://localhost:5000/moviesInfo/1/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "rank",
+							"value": "4",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "tag",
+							"value": "必看",
+							"type": "text",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "watch_status",
+							"value": "true",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": "电影信息管理"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/movies/search",
+			"request": {
+				"url": "http://localhost:5000/movies/search",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "rank",
+							"value": "5",
+							"type": "text",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "tag",
+							"value": "必看",
+							"type": "text",
+							"description": "",
+							"disabled": true
+						},
+						{
+							"key": "watch_status",
+							"value": "true",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "movie_name",
+							"value": "英雄本色2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "电影搜索"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/movies/login",
+			"request": {
+				"url": "http://localhost:5000/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "shadow",
+							"type": "text",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "123123",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "电影搜索"
+			},
+			"response": []
+		}
+	]
+}
